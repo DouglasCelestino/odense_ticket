@@ -164,49 +164,6 @@ body {
   border-bottom: 1px solid #ddd;
   margin: 8px 0;
 }
-
-/* === ORELHAS CENTRAIS (ABAIXO DE PAID) === */
-.dashed {
-  position: relative;
-  border-top: 1px dashed #bbb;
-  margin: 15px 0;
-  height: 1px;
-}
-.dashed::before,
-.dashed::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) rotate(45deg);
-  width: 28px;
-  height: 28px;
-  background: #f7f7f7;
-  border-radius: 50%;
-  z-index: 2;
-}
-/* esquerda */
-.dashed::before {
-  left: -14px;
-  border-top: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  border-left: 1px solid #f7f7f7;
-  border-bottom: 1px solid #f7f7f7;
-}
-/* direita */
-.dashed::after {
-  right: -14px;
-  border-top: 1px solid #f7f7f7;
-  border-right: 1px solid #f7f7f7;
-  border-left: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
-
-/* === ORELHAS INFERIORES (ACIMA DO BOTÃO) === */
-.bottom-notch {
-  position: relative;
-  margin-top: 5px;
-  height: 1px;
-}
 .bottom-notch::before,
 .bottom-notch::after {
   content: "";
