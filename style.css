@@ -1,0 +1,305 @@
+/* === GLOBAL === */
+body {
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding-top: 20px;
+}
+
+/* === HEADER === */
+.site-header {
+  width: 340px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 10px 0;
+}
+
+.site-header .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 114px;
+  height: 40px;
+  object-fit: contain;
+  transform: translateY(1px);
+}
+
+/* === FYNBUS BUTTON === */
+.fynbus-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #95d450 0%, #7fbc3b 100%);
+  border: none;
+  border-radius: 5px;
+  padding: 4px 10px;
+  height: 22px;
+  min-width: 72px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #82b71b;
+  font: 500 14px/1.4 "Avenir Next LT Pro", Arial, Helvetica, sans-serif;
+  transition: filter 0.2s ease;
+}
+.fynbus-btn:hover { filter: brightness(1.1); }
+.fynbus-img {
+  height: 8px;
+  width: auto;
+  display: block;
+  transform: translateY(-0.5px);
+}
+
+/* === ICONS RIGHT === */
+.site-header .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.option:hover { opacity: 0.8; }
+.option .icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+.option .text {
+  font-size: 0.875rem;
+  color: #0d0802;
+}
+
+/* === TICKET === */
+.ticket {
+  background: white;
+  width: 340px;
+  border-radius: 10px;
+  overflow: visible; /* mudar de hidden pra visible */
+  position: relative;
+  padding-bottom: 10px;
+  z-index: 1;
+  top: 30px;
+}
+
+/* === BOLA DOURADA === */
+.logo-circle {
+  position: absolute;
+  right: 22px;
+  top: -28px; /* subiu a bola */
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: rgb(198, 132, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+
+.logo-number {
+  position: absolute;
+  color: #fdf4e2;
+  font-family: "Comeo", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  z-index: 4;
+  user-select: none;
+}
+.logo-rotate {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+  transform-origin: center center;
+  animation: rotate-logo 40s linear infinite;
+  opacity: 0.9;
+  z-index: 2;
+}
+@keyframes rotate-logo {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* === CONTEÚDO === */
+.timer {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.valid-text {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin: 4px 0 10px 0;
+}
+.info {
+  margin: 0 20px;
+  font-size: 14px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.divider {
+  border-bottom: 1px solid #ddd;
+  margin: 8px 0;
+}
+
+/* === ORELHAS CENTRAIS (ABAIXO DE PAID) === */
+.dashed {
+  position: relative;
+  border-top: 1px dashed #bbb;
+  margin: 15px 0;
+  height: 1px;
+}
+.dashed::before,
+.dashed::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 28px;
+  height: 28px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  z-index: 2;
+}
+/* esquerda */
+.dashed::before {
+  left: -14px;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+}
+/* direita */
+.dashed::after {
+  right: -14px;
+  border-top: 1px solid #f7f7f7;
+  border-right: 1px solid #f7f7f7;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* === ORELHAS INFERIORES (ACIMA DO BOTÃO) === */
+.bottom-notch {
+  position: relative;
+  margin-top: 5px;
+  height: 1px;
+}
+.bottom-notch::before,
+.bottom-notch::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%) rotate(45deg);
+  width: 28px;
+  height: 28px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  z-index: 2;
+}
+.bottom-notch::before {
+  left: -14px;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+}
+.bottom-notch::after {
+  right: -14px;
+  border-top: 1px solid #f7f7f7;
+  border-right: 1px solid #f7f7f7;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* === CÓDIGO === */
+.code {
+  text-align: center;
+  font-weight: bold;
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+/* === FAIXA VERMELHA ROLANTE === */
+.ribbon {
+  position: relative;
+  overflow: hidden;
+  height: 20px;
+  background: #c72626;
+  display: flex;
+  align-items: center;
+}
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 9s linear infinite;
+}
+.scroll-text {
+  white-space: nowrap;
+  font-family: "Comeo", Arial, sans-serif;
+  font-size: 10px;
+  color: #fdf4e2;
+  letter-spacing: 0.3px;
+  line-height: 12px;
+  padding-right: 30px;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.ribbon::before,
+.ribbon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+.ribbon::before {
+  left: 0;
+  background: linear-gradient(to right, #c72626 20%, transparent);
+}
+.ribbon::after {
+  right: 0;
+  background: linear-gradient(to left, #c72626 20%, transparent);
+}
+
+/* === BOTÃO === */
+button {
+  width: 90%;
+  margin: 10px 5%;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f6f6f6;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #e0e0e0;
+}

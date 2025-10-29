@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odense Letbane - Ticket</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header fora do ticket -->
+  <header class="site-header">
+    <div class="left">
+      <img src="assets/letbane-logo.c015cb3b.svg" alt="Odense Letbane" class="logo">
+
+      <!-- Botão Fynbus -->
+      <a href="#" class="fynbus-btn">
+        <img src="assets/fynbus-logo-transparent-bg.22b345ef.png" alt="Fynbus" class="fynbus-img">
+      </a>
+    </div>
+    <div class="right">
+      <div class="option">
+        <img src="assets/globe-icon-updated.c372098e.svg" alt="Language" class="icon">
+        <span class="text">Dansk</span>
+      </div>
+      <div class="option">
+        <img src="assets/faq-icon-updated.7104d410.svg" alt="Help" class="icon">
+        <span class="text">Help</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Ticket -->
+  <div class="ticket">
+    <main>
+      <!-- BOLA DOURADA GIRANDO -->
+      <div class="logo-circle">
+        <span class="logo-number">22</span>
+        <img src="assets/letbane-logo-text.587ab6f3.svg" alt="Letbane logo text" class="logo-rotate">
+      </div>
+
+      <div id="timer" class="timer">1h : 15min</div>
+      <p class="valid-text">Your ticket is valid</p>
+
+      <div class="info">
+        <div class="row"><span>1x UNG ODENSE (YOUNG ODENSE)</span><span>10 kr.</span></div>
+        <div class="divider"></div>
+        <div class="row"><span>Tel. no.</span><span>+45 71677123</span></div>
+        <div class="row"><span>Valid from</span><span id="from"></span></div>
+        <div class="row"><span>Valid until</span><span id="until"></span></div>
+        <div class="divider"></div>
+        <div class="row"><span>PAID</span><span>10 kr.</span></div>
+      </div>
+
+      <!-- LINHA TRACEJADA + ORELHAS CENTRAIS -->
+      <div class="dashed"></div>
+
+      <div class="code">+473683812+</div>
+
+      <!-- FAIXA VERMELHA -->
+      <div class="ribbon">
+        <div class="scroll-track">
+          <div class="scroll-text">
+            ODENSE TRAMWAY • ODENSE TRAMWAY • ODENSE TRAMWAY • ODENSE TRAMWAY •
+          </div>
+          <div class="scroll-text">
+            ODENSE TRAMWAY • ODENSE TRAMWAY • ODENSE TRAMWAY • ODENSE TRAMWAY •
+          </div>
+        </div>
+      </div>
+
+      <button>BUY MORE TICKETS</button>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
