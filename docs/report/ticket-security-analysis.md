@@ -1,4 +1,4 @@
-# Digital Ticket Validation – Security Analysis (Case Study)
+# Digital Ticket Validation – Security Analysis
 **Author:** Douglas Celestino  
 **Date:** 2026-01-03  
 **Context:** Academic exchange at SDU (Denmark)  
