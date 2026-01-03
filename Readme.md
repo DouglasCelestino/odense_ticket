@@ -17,6 +17,23 @@ low-friction technical mitigations**.
 
 ---
 
+## 📄 Documentation
+
+This project includes a detailed technical report and a responsible disclosure
+statement describing the scope, methodology, findings, and ethical boundaries
+of the analysis.
+
+- **Security Analysis Report (PDF):**  
+  `docs/report/Digital_Ticket_Validation_Security_Analysis_Case_Study.pdf`
+
+- **Responsible Disclosure Statement:**  
+  `docs/responsible-disclosure.md`
+
+The report provides a high-level security-by-design assessment and proposes
+practical mitigation strategies without exposing sensitive implementation details.
+
+---
+
 ## 📌 Scope
 
 - Visual ticket UI proof-of-concept
