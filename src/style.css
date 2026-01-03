@@ -95,7 +95,7 @@ body {
   top: 30px;
 }
 
-/* === BOLA DOURADA === */
+/* === GOLDEN BALL === */
 .logo-circle {
   position: absolute;
   right: 22px;
@@ -138,7 +138,7 @@ body {
   to   { transform: rotate(360deg); }
 }
 
-/* === CONTEÚDO === */
+/* === CONTENT === */
 .timer {
   text-align: center;
   font-size: 22px;
@@ -165,7 +165,7 @@ body {
   margin: 8px 0;
 }
 
-/* === CÓDIGO === */
+/* === NUM-CODE === */
 .code {
   text-align: center;
   font-weight: bold;
@@ -173,7 +173,7 @@ body {
   font-size: 18px;
 }
 
-/* === FAIXA VERMELHA ROLANTE === */
+/* === RED ROLLING BELT === */
 .ribbon {
   position: relative;
   overflow: hidden;
@@ -219,7 +219,6 @@ body {
   background: linear-gradient(to left, #c72626 20%, transparent);
 }
 
-/* === BOTÃO === */
 button {
   width: 90%;
   margin: 10px 5%;
